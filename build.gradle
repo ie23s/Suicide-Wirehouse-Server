@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.ie23s.java.'
+version '1.0-ALPHA'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url "https://mvnrepository.com/artifact/mysql/mysql-connector-java"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.19'
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.45'
+
+}
