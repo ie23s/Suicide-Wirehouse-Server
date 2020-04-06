@@ -10,7 +10,7 @@ public class Main {
 	private static MySQL mySQL;
 
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException, SQLException {
-		mySQL = new MySQL("localhost", "suicidewarehouse", "suicidewarehouse", "SequrityPassword");
+		mySQL = new MySQL("192.168.1.3", "suicidewarehouse", "suicidewarehouse", "SequrityPassword");
 		mySQL.connect();
 		Server server = new Server();
 		try {

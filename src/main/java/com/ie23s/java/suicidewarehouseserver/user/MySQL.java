@@ -71,7 +71,6 @@ public class MySQL extends MySQLUtil {
 		int id = -1;
 		ResultSet resultSet =
 				executeQuery(String.format("SELECT `id`, `hash` FROM `members` WHERE `name` = '%s'", strip(name)));
-
 		if (resultSet.next() && resultSet.getString("hash").equalsIgnoreCase(encodeSHA256(hash))) {
 			id = resultSet.getInt("id");
 			execute(
